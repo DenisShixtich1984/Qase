@@ -1,19 +1,21 @@
 package tests;
-
 import org.testng.annotations.Test;
+import static com.codeborne.selenide.Condition.*;
 
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
 
-public class LoginTests {
+public class LoginTests extends BaseTest{
+
+    String massageError = "These credentials do not match our records.";
 
     @Test
-    public void Test() {
-        open("/login");
-        $("#submit").click();
-        $(".message").shouldHave(text("Hello"));
-
+    public void loginTrue() {
+    loginPage.login();
+    projectsPage.titleProjectPage.shouldBe(visible);
     }
 
+    @Test
+    public void loginWithFalseData () {
+        loginPage.falseLogin();
+        loginPage.errorMessage.shouldHave(exactText(massageError));
+    }
 }
