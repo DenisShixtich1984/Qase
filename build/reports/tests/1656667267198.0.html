@@ -1,0 +1,1154 @@
+<html lang="en" style="font-size: 16px;"><head>
+    <meta charset="UTF-8">
+    <title>Team Dashboard | Qase</title>
+    <style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0);
+          animation-delay: var(--fa-animation-delay, 0);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link data-chunk="main" rel="stylesheet" href="/assets/main/css/main.f4a3a91f185c9567f3a4.css">
+<link data-chunk="containers-ProjectsListContainer" rel="stylesheet" href="/assets/main/css/containers-ProjectsListContainer.5178f5108042b2564be3.css">
+    
+    
+        <link rel="stylesheet" href="/assets/main/css/fontawesome.min.css">
+    
+        <link rel="stylesheet" href="/assets/main/css/fontawesome-core.min.css">
+    
+        <link rel="stylesheet" href="/lib/photoswipe/photoswipe.css">
+    
+        <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.css">
+    
+    
+    
+    <script type="text/javascript" async="" src="https://widget.intercom.io/widget/wsaz8vex"></script><script async="" src="https://www.datadoghq-browser-agent.com/datadog-rum-v4.js"></script><script type="application/javascript">
+        (function(h,o,u,n,d) {
+            h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+            d=o.createElement(u);d.async=1;d.src=n
+            n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+        })(window,document,'script','https://www.datadoghq-browser-agent.com/datadog-rum-v4.js','DD_RUM')
+        DD_RUM.onReady(function() {
+            DD_RUM.init({
+                applicationId: '1e418040-3c5d-4e4e-989c-e185afa98d2c',
+                clientToken: 'pub893fcbebf3a501e9f56324b1a9c45422',
+                site: 'datadoghq.com',
+                service:'qase-app',
+                env: 'production',
+                sampleRate: 100,
+                trackInteractions: true,
+            });
+        })
+    </script>
+    
+<link rel="stylesheet" type="text/css" href="/assets/main/css/containers-MembersListContainer.bd219d5fe96327e9b5a1.css"><link media="all" rel="stylesheet" href="https://cdn.headwayapp.co/headway-animate.css"></head>
+<body class="">
+
+    <script id="initialState" type="application/json">{"user":{"name":"Den","email":"dehok@mail.ru","avatar_url":"https://d2cxucsjd6xvsd.cloudfront.net/public/user/thumb/Ry0qHcVXPOCRIJCO3tFYFSalIo6fUdBuCG8CbOey.jpg","is_online":true,"last_action":"Unknown","member_id":1,"is_owner":true,"single_tenant":false,"hash":"a5c1ad8635e2f968c4180f026d959280e7a2033e27f9c7c2aa747631db021526","sentry":{"hash":"3063cc3552338cf49962e69cde2be365e76af013e73ed84246b3d3e6977b2ebc"},"team":{"hash":"5affa3ae09ef2da5509d046bb5f2e422b5e4ea6e"},"stripe":{"id":"cus_LU1k1Sx0BaPGBN","plan":"free_v4"},"workspace_available_teams":[{"hash":"5affa3ae09ef2da5509d046bb5f2e422b5e4ea6e","title":"ONLYI LTD"}],"appearance":{"theme":"light","layout":"h","size":"m"},"role":"QA engineer","access_rights":{"project":["save","delete","access","import","export"],"integrations":["list","save","delete"],"groups":["list","save","delete","members"],"roles":["list","save","delete","members"],"cases":["repository","save","delete","move","approve","rollback"],"suites":["save","delete","move"],"reviews":["list"],"milestones":["list","save","delete"],"shared_steps":["list","save","delete"],"plans":["list","save","delete"],"runs":["list","save","submit_results","assign","delete","sync","manage_configurations"],"defects":["list","save","resolve","delete"],"team":["invite","activate","member_update","save"],"custom_fields":["list","save","delete"],"system_fields":["list","save"],"fields":["list","save","create","delete"],"tags":["list","save","delete"],"attachments":["list","delete"],"webhooks":["list","save","delete"],"environments":["list","save","delete"],"billing":["manage"],"requirements":["list","save","delete"],"dashboards":["list","create","save","delete"],"security":["sso"]},"features":{"custom_fields":false,"requirements":false,"api":true,"webhooks":false,"review":false,"logs":false,"rbac":false,"read_only":true,"saml":false,"qql":false,"dashboards":false}},"project":{"notFound":false}}</script>
+
+
+    <script id="flashMessages" type="application/json">[]</script>
+
+
+<div id="app"><div id="layout" class="UhwQt3 slTPeV YeVjsf light"><div class="XN5jjQ"><div class="DDVAeb"><a class="BflVGM" href="/projects"></a><a class="HC5SEf" href="/projects">Projects</a><a class="HC5SEf" href="/workspace">Workspace</a><a data-feature="false" class="HC5SEf" href="/report/dashboards">Dashboards</a><a data-feature="false" class="HC5SEf" href="/report/queries-list">Queries</a><a data-feature="true" class="HC5SEf" href="/apps">Apps</a></div><div class="z_EXCG"><span aria-label="Changelog" data-balloon-pos="down" class="mM6FY8 ia6fhC"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bell" class="svg-inline--fa fa-bell fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M256 32V49.88C328.5 61.39 384 124.2 384 200V233.4C384 278.8 399.5 322.9 427.8 358.4L442.7 377C448.5 384.2 449.6 394.1 445.6 402.4C441.6 410.7 433.2 416 424 416H24C14.77 416 6.365 410.7 2.369 402.4C-1.628 394.1-.504 384.2 5.26 377L20.17 358.4C48.54 322.9 64 278.8 64 233.4V200C64 124.2 119.5 61.39 192 49.88V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32V32zM216 96C158.6 96 112 142.6 112 200V233.4C112 281.3 98.12 328 72.31 368H375.7C349.9 328 336 281.3 336 233.4V200C336 142.6 289.4 96 232 96H216zM288 448C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288z"></path></svg><span id="HW_badge_cont" class="HW_badge_cont HW_visible" style=""><span id="HW_badge" class="HW_badge HW_visible HW_animated" data-count-unseen="5" style="">5</span></span></span><span aria-label="Chat" data-balloon-pos="down" class="mM6FY8"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="comment" class="svg-inline--fa fa-comment fa-fw " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 .0272 125.1 .0272 240c0 47.63 19.91 91.25 52.91 126.2c-14.88 39.5-45.87 72.88-46.37 73.25c-6.625 7-8.375 17.25-4.625 26C5.818 474.2 14.38 480 24 480c61.5 0 109.1-25.75 139.1-46.25C191.1 442.8 223.3 448 256 448c141.4 0 255.1-93.13 255.1-208S397.4 32 256 32zM256.1 400c-26.75 0-53.12-4.125-78.38-12.12l-22.75-7.125l-19.5 13.75c-14.25 10.12-33.88 21.38-57.5 29c7.375-12.12 14.37-25.75 19.88-40.25l10.62-28l-20.62-21.87C69.82 314.1 48.07 282.2 48.07 240c0-88.25 93.25-160 208-160s208 71.75 208 160S370.8 400 256.1 400z"></path></svg></span><span class="Eb2vGG"><img class="X8BNLp" alt="" src="https://d2cxucsjd6xvsd.cloudfront.net/public/user/thumb/Ry0qHcVXPOCRIJCO3tFYFSalIo6fUdBuCG8CbOey.jpg"></span></div></div><div class="vJiySC"><div class="zRpBhm"><div class="SaBStZ"><div class="sqabXr">ONLYI LTD</div></div><div class="eMKPQ7 pwfTOT"><div class="naMbZZ Q1BY9A"><div class="N4esAX">WORKSPACE</div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fjsbp9 mejE4t" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z"></path></svg></div><div aria-hidden="false" class="rah-static rah-static--height-auto" style="height: auto; overflow: visible;"><div><div><a aria-current="page" class="x52Gbe yLYL59" data-feature="true" title="Users" aria-label="Users" href="/workspace"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" class="svg-inline--fa fa-user fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path></svg><span class="nbWgel">Users</span></a></div><div><a class="x52Gbe" data-feature="true" title="Invites" aria-label="Invites" href="/workspace/invites"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="user-plus" class="svg-inline--fa fa-user-plus fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80C179.9 208 144 172.1 144 128C144 83.89 179.9 48 224 48zM274.7 304H173.3C77.61 304 0 381.6 0 477.3C0 496.5 15.52 512 34.66 512h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304zM48.71 464C55.38 401.1 108.7 352 173.3 352H274.7c64.61 0 117.1 49.13 124.6 112H48.71zM616 200h-48v-48C568 138.8 557.3 128 544 128s-24 10.75-24 24v48h-48C458.8 200 448 210.8 448 224s10.75 24 24 24h48v48C520 309.3 530.8 320 544 320s24-10.75 24-24v-48h48C629.3 248 640 237.3 640 224S629.3 200 616 200z"></path></svg><span class="nbWgel">Invites</span></a></div><div><a class="x52Gbe" data-feature="true" title="Groups" aria-label="Groups" href="/workspace/groups"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="users" class="svg-inline--fa fa-users fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM319.9 160c30.85 0 55.96 25.12 55.96 56S350.7 272 319.9 272S263.9 246.9 263.9 216S289 160 319.9 160zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM178.1 464c10.47-36.76 47.36-64 91.14-64H369.9c43.77 0 80.66 27.24 91.14 64H178.1zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160z"></path></svg><span class="nbWgel">Groups</span></a></div><div><a class="x52Gbe" data-feature="true" title="Roles" aria-label="Roles" href="/workspace/role"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="user-lock" class="svg-inline--fa fa-user-lock fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M592 288H576V212.7c0-41.84-30.03-80.04-71.66-84.27c-2.805-.2852-5.59-.4229-8.336-.4229C451.9 127.1 416 163.9 416 208V288h-16C373.6 288 352 309.6 352 336v128c0 26.4 21.6 48 48 48h192c26.4 0 48-21.6 48-48v-128C640 309.6 618.4 288 592 288zM496 432c-17.62 0-32-14.38-32-32s14.38-32 32-32s32 14.38 32 32S513.6 432 496 432zM528 288h-64V208c0-17.62 14.38-32 32-32s32 14.38 32 32V288zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48zM320 464c0 18.08 6.256 34.59 16.41 48H32c-17.67 0-32-14.33-32-32c0-97.2 78.8-176 176-176h96c18.09 0 35.54 2.748 51.97 7.818C321.5 319.5 320 327.5 320 336v25.52C305.1 355.5 288.1 352 272 352h-96c-65.16 0-119.1 48.95-127 112H320z"></path></svg><span class="nbWgel">Roles</span></a></div><div><a class="x52Gbe" data-feature="true" title="Fields" aria-label="Fields" href="/workspace/fields"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="rectangle-list" class="svg-inline--fa fa-rectangle-list fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M128 192C110.3 192 96 177.7 96 160C96 142.3 110.3 128 128 128C145.7 128 160 142.3 160 160C160 177.7 145.7 192 128 192zM200 160C200 146.7 210.7 136 224 136H448C461.3 136 472 146.7 472 160C472 173.3 461.3 184 448 184H224C210.7 184 200 173.3 200 160zM200 256C200 242.7 210.7 232 224 232H448C461.3 232 472 242.7 472 256C472 269.3 461.3 280 448 280H224C210.7 280 200 269.3 200 256zM200 352C200 338.7 210.7 328 224 328H448C461.3 328 472 338.7 472 352C472 365.3 461.3 376 448 376H224C210.7 376 200 365.3 200 352zM128 224C145.7 224 160 238.3 160 256C160 273.7 145.7 288 128 288C110.3 288 96 273.7 96 256C96 238.3 110.3 224 128 224zM128 384C110.3 384 96 369.7 96 352C96 334.3 110.3 320 128 320C145.7 320 160 334.3 160 352C160 369.7 145.7 384 128 384zM0 96C0 60.65 28.65 32 64 32H512C547.3 32 576 60.65 576 96V416C576 451.3 547.3 480 512 480H64C28.65 480 0 451.3 0 416V96zM48 96V416C48 424.8 55.16 432 64 432H512C520.8 432 528 424.8 528 416V96C528 87.16 520.8 80 512 80H64C55.16 80 48 87.16 48 96z"></path></svg><span class="nbWgel">Fields</span></a></div><div><a class="x52Gbe" data-feature="true" title="Tags" aria-label="Tags" href="/workspace/tags"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="tags" class="svg-inline--fa fa-tags fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M472.8 168.4C525.1 221.4 525.1 306.6 472.8 359.6L360.8 472.9C351.5 482.3 336.3 482.4 326.9 473.1C317.4 463.8 317.4 448.6 326.7 439.1L438.6 325.9C472.5 291.6 472.5 236.4 438.6 202.1L310.9 72.87C301.5 63.44 301.6 48.25 311.1 38.93C320.5 29.61 335.7 29.7 344.1 39.13L472.8 168.4zM144 143.1C144 161.7 129.7 175.1 112 175.1C94.33 175.1 80 161.7 80 143.1C80 126.3 94.33 111.1 112 111.1C129.7 111.1 144 126.3 144 143.1zM410.7 218.7C435.7 243.7 435.7 284.3 410.7 309.3L277.3 442.7C252.3 467.7 211.7 467.7 186.7 442.7L18.75 274.7C6.743 262.7 0 246.5 0 229.5V80C0 53.49 21.49 32 48 32H197.5C214.5 32 230.7 38.74 242.7 50.75L410.7 218.7zM48 79.1V229.5C48 233.7 49.69 237.8 52.69 240.8L220.7 408.8C226.9 415.1 237.1 415.1 243.3 408.8L376.8 275.3C383.1 269.1 383.1 258.9 376.8 252.7L208.8 84.69C205.8 81.69 201.7 79.1 197.5 79.1L48 79.1z"></path></svg><span class="nbWgel">Tags</span></a></div><div><a class="x52Gbe" data-feature="true" title="Attachments" aria-label="Attachments" href="/workspace/attachments"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="image" class="svg-inline--fa fa-image fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M152 120c-26.51 0-48 21.49-48 48s21.49 48 48 48s48-21.49 48-48S178.5 120 152 120zM447.1 32h-384C28.65 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM463.1 409.3l-136.8-185.9C323.8 218.8 318.1 216 312 216c-6.113 0-11.82 2.768-15.21 7.379l-106.6 144.1l-37.09-46.1c-3.441-4.279-8.934-6.809-14.77-6.809c-5.842 0-11.33 2.529-14.78 6.809l-75.52 93.81c0-.0293 0 .0293 0 0L47.99 96c0-8.822 7.178-16 16-16h384c8.822 0 16 7.178 16 16V409.3z"></path></svg><span class="nbWgel">Attachments</span></a></div></div></div></div><div class="eMKPQ7 pwfTOT"><div class="naMbZZ Q1BY9A"><div class="N4esAX">SECURITY</div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fjsbp9 mejE4t" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z"></path></svg></div><div aria-hidden="false" class="rah-static rah-static--height-auto" style="height: auto; overflow: visible;"><div><div><a class="x52Gbe" data-feature="false" title="Single Sign-on" aria-label="Single Sign-on" href="/workspace/security"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="lock" class="svg-inline--fa fa-lock fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M96 192V128C96 57.31 153.3 0 224 0C294.7 0 352 57.31 352 128V192H384C419.3 192 448 220.7 448 256V448C448 483.3 419.3 512 384 512H64C28.65 512 0 483.3 0 448V256C0 220.7 28.65 192 64 192H96zM144 192H304V128C304 83.82 268.2 48 224 48C179.8 48 144 83.82 144 128V192zM48 448C48 456.8 55.16 464 64 464H384C392.8 464 400 456.8 400 448V256C400 247.2 392.8 240 384 240H64C55.16 240 48 247.2 48 256V448z"></path></svg><span class="nbWgel">Single Sign-on</span></a></div><div><a class="x52Gbe" data-feature="false" title="Audit logs" aria-label="Audit logs" href="/workspace/logs"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-magnifying-glass" class="svg-inline--fa fa-file-magnifying-glass fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M365.3 93.38l-74.63-74.64C278.6 6.742 262.3 0 245.4 0H64C28.65 0 0 28.65 0 64l.0065 384c0 35.34 28.65 64 64 64H320c35.2 0 64-28.8 64-64V138.6C384 121.7 377.3 105.4 365.3 93.38zM336 448c0 8.836-7.164 16-16 16H64.02c-8.838 0-16-7.164-16-16L48 64.13c0-8.836 7.164-16 16-16h160L224 128c0 17.67 14.33 32 32 32h79.1V448zM176 208c-53.02 0-96 42.98-96 96s42.98 96 96 96c17.77 0 34.21-5.16 48.48-13.58l46.55 46.55C275.7 437.7 281.8 440 288 440s12.28-2.344 16.97-7.031c9.375-9.375 9.375-24.56 0-33.94l-46.55-46.55C266.8 338.2 272 321.8 272 304C272 250.1 229 208 176 208zM176 352C149.5 352 128 330.5 128 304S149.5 256 176 256S224 277.5 224 304S202.5 352 176 352z"></path></svg><span class="nbWgel">Audit logs</span></a></div></div></div></div><div class="eMKPQ7 pwfTOT"><div class="naMbZZ Q1BY9A"><div class="N4esAX">BILLING</div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up fjsbp9 mejE4t" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 352c-8.188 0-16.38-3.125-22.62-9.375L224 173.3l-169.4 169.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25C432.4 348.9 424.2 352 416 352z"></path></svg></div><div aria-hidden="false" class="rah-static rah-static--height-auto" style="height: auto; overflow: visible;"><div><div><a class="x52Gbe" data-feature="true" title="Subscription" aria-label="Subscription" href="/billing"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bolt" class="svg-inline--fa fa-bolt fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M289.7 .0006C308.8 .0006 322.6 18.26 317.4 36.61L263.8 224H349.1C368.4 224 384 239.6 384 258.9C384 269.2 379.5 278.9 371.7 285.6L112.9 505.2C107.7 509.6 101.1 512 94.27 512C75.18 512 61.4 493.7 66.64 475.4L120.2 288H33.74C15.1 288 0 272.9 0 254.3C0 244.4 4.315 235 11.81 228.6L271.1 6.893C276.3 2.445 282.9 0 289.7 0V.0006zM253.6 84.99L72.36 240H152C159.5 240 166.6 243.5 171.2 249.5C175.7 255.6 177.1 263.4 175.1 270.6L130.3 427.5L313.5 272H232C224.5 272 217.4 268.5 212.8 262.5C208.3 256.4 206.9 248.6 208.9 241.4L253.6 84.99z"></path></svg><span class="nbWgel">Subscription</span></a></div><div><a class="x52Gbe" data-feature="true" title="Invoices" aria-label="Invoices" href="/billing/history"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="receipt" class="svg-inline--fa fa-receipt fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M264 144C277.3 144 288 154.7 288 168C288 181.3 277.3 192 264 192H120C106.7 192 96 181.3 96 168C96 154.7 106.7 144 120 144H264zM264 320C277.3 320 288 330.7 288 344C288 357.3 277.3 368 264 368H120C106.7 368 96 357.3 96 344C96 330.7 106.7 320 120 320H264zM96 256C96 242.7 106.7 232 120 232H264C277.3 232 288 242.7 288 256C288 269.3 277.3 280 264 280H120C106.7 280 96 269.3 96 256zM80 40.39L120.4 5.778C129.4-1.926 142.6-1.926 151.6 5.778L192 40.39L232.4 5.778C241.4-1.926 254.6-1.926 263.6 5.778L304 40.39L344.4 5.778C351.5-.3214 361.5-1.72 370 2.196C378.5 6.113 384 14.63 384 24V488C384 497.4 378.5 505.9 370 509.8C361.5 513.7 351.5 512.3 344.4 506.2L304 471.6L263.6 506.2C254.6 513.9 241.4 513.9 232.4 506.2L192 471.6L151.6 506.2C142.6 513.9 129.4 513.9 120.4 506.2L80 471.6L39.62 506.2C32.5 512.3 22.49 513.7 13.97 509.8C5.456 505.9 0 497.4 0 488V24C0 14.63 5.456 6.112 13.97 2.196C22.49-1.72 32.5-.3214 39.62 5.778L80 40.39zM64.38 421.8C73.37 414.1 86.63 414.1 95.62 421.8L136 456.4L176.4 421.8C185.4 414.1 198.6 414.1 207.6 421.8L248 456.4L288.4 421.8C297.4 414.1 310.6 414.1 319.6 421.8L336 435.8V76.18L319.6 90.22C310.6 97.93 297.4 97.93 288.4 90.22L248 55.61L207.6 90.22C198.6 97.93 185.4 97.93 176.4 90.22L136 55.61L95.62 90.22C86.63 97.93 73.37 97.93 64.38 90.22L48 76.18V435.8L64.38 421.8z"></path></svg><span class="nbWgel">Invoices</span></a></div></div></div></div><div class="O2iM37"><div><div><a class="x52Gbe" data-feature="true" title="Settings" aria-label="Settings" href="/workspace/settings"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="gear" class="svg-inline--fa fa-gear fa-fw ZP37cN" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M160 256C160 202.1 202.1 160 256 160C309 160 352 202.1 352 256C352 309 309 352 256 352C202.1 352 160 309 160 256zM256 208C229.5 208 208 229.5 208 256C208 282.5 229.5 304 256 304C282.5 304 304 282.5 304 256C304 229.5 282.5 208 256 208zM293.1 .0003C315.3 .0003 334.6 15.19 339.8 36.74L347.6 69.21C356.1 73.36 364.2 78.07 371.9 83.28L404 73.83C425.3 67.56 448.1 76.67 459.2 95.87L496.3 160.1C507.3 179.3 503.8 203.6 487.8 218.9L463.5 241.1C463.8 246.6 464 251.3 464 256C464 260.7 463.8 265.4 463.5 270L487.8 293.1C503.8 308.4 507.3 332.7 496.3 351.9L459.2 416.1C448.1 435.3 425.3 444.4 404 438.2L371.9 428.7C364.2 433.9 356.1 438.6 347.6 442.8L339.8 475.3C334.6 496.8 315.3 512 293.1 512H218.9C196.7 512 177.4 496.8 172.2 475.3L164.4 442.8C155.9 438.6 147.8 433.9 140.1 428.7L107.1 438.2C86.73 444.4 63.94 435.3 52.85 416.1L15.75 351.9C4.66 332.7 8.168 308.4 24.23 293.1L48.47 270C48.16 265.4 48 260.7 48 255.1C48 251.3 48.16 246.6 48.47 241.1L24.23 218.9C8.167 203.6 4.66 179.3 15.75 160.1L52.85 95.87C63.94 76.67 86.73 67.56 107.1 73.83L140.1 83.28C147.8 78.07 155.9 73.36 164.4 69.21L172.2 36.74C177.4 15.18 196.7 0 218.9 0L293.1 .0003zM205.5 103.6L194.3 108.3C181.6 113.6 169.8 120.5 159.1 128.7L149.4 136.1L94.42 119.9L57.31 184.1L98.81 223.6L97.28 235.6C96.44 242.3 96 249.1 96 256C96 262.9 96.44 269.7 97.28 276.4L98.81 288.4L57.32 327.9L94.42 392.1L149.4 375.9L159.1 383.3C169.8 391.5 181.6 398.4 194.3 403.7L205.5 408.4L218.9 464H293.1L306.5 408.4L317.7 403.7C330.4 398.4 342.2 391.5 352.9 383.3L362.6 375.9L417.6 392.1L454.7 327.9L413.2 288.4L414.7 276.4C415.6 269.7 416 262.9 416 256C416 249.1 415.6 242.3 414.7 235.6L413.2 223.6L454.7 184.1L417.6 119.9L362.6 136.1L352.9 128.7C342.2 120.5 330.4 113.6 317.7 108.3L306.5 103.6L293.1 48H218.9L205.5 103.6z"></path></svg><span class="nbWgel">Settings</span></a></div></div><div class="M9jyFC"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-fw LTFAYi" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M206.7 464.6l-183.1-191.1C18.22 267.1 16 261.1 16 256s2.219-11.97 6.688-16.59l183.1-191.1c9.152-9.594 24.34-9.906 33.9-.7187c9.625 9.125 9.938 24.37 .7187 33.91L73.24 256l168 175.4c9.219 9.5 8.906 24.78-.7187 33.91C231 474.5 215.8 474.2 206.7 464.6z"></path></svg><span class="qlV_xU">Collapse submenu</span></div></div></div><div id="application-content" class="GGuIV1"><div class="container-fluid container-app-content"><div class="row"><div class="col-lg-12"><div class="d-flex flex-row justify-content-between align-items-end"><h1>Workspace</h1></div><div class="row mt-3"><div class="row"><div class="col text-start d-flex"><div class="filters-block"><div class="filters-block-items"><div class="form-inline case-search case-search-input me-2"><input type="text" name="title" class="form-control search-input" placeholder="Search for team members" value=""></div><div class="filter-outer me-2"><div class="filter-item"><span>Status: Active</span></div><div class="filter-dropdown hide custom-padding"><div class="filter-checkboxes"><div class="checkbox"><label class="custom-control custom-checkbox" style="margin-bottom: 0.25rem;"><input type="checkbox" name="status-1" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Active</span></label></div><div class="checkbox"><label class="custom-control custom-checkbox" style="margin-bottom: 0.25rem;"><input type="checkbox" name="status-0" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">Inactive</span></label></div><button type="button" class="btn btn-sm btn-secondary filter-select-all">Select all</button></div></div></div></div><div class="add-filter-outer"><button class="add-filter-button">+ Add filter</button></div></div></div></div><div class="row"><div class="col"><table class="table projects-table members-table mt-3" cellspacing="0"><thead><tr><th style="padding-left: 4rem;">User</th><th>Status</th><th>Type</th><th class="hidden-xs">Role</th><th class="hidden-xs">Role title</th><th class="hidden-xs">Last action</th><th></th></tr></thead><tbody><tr><td><div class="d-flex"><div class="team-member-avatar-block"><div class="member-online"><img class="avatar-md" src="https://d2cxucsjd6xvsd.cloudfront.net/public/user/thumb/Ry0qHcVXPOCRIJCO3tFYFSalIo6fUdBuCG8CbOey.jpg" alt=""></div></div><div class="team-member-name-block"><span class="team-member-name d-block">Den</span><span class="team-member-role">dehok@mail.ru</span></div></div></td><td class="member-controls"><i class="fa fa-fw fa-check text-success"></i></td><td class="member-cell">Regular</td><td class="member-cell">Owner</td><td class="member-cell">QA engineer</td><td class="member-cell">22 minutes ago</td><td class="member-controls text-end"><div class="dropdown"><a class="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-ellipsis-h"></i></a><div class="dropdown-menu dropdown-menu-end"><div class="dropdown-item"><a href="/user/profile" class="action-settings">Edit profile</a></div></div></div></td></tr><tr><td><div class="d-flex"><div class="team-member-avatar-block"><div class=""><img class="avatar-md" src="https://d2cxucsjd6xvsd.cloudfront.net/public/user/thumb/e913d7845f29cd6487cc64899e617b75.jpg" alt=""></div></div><div class="team-member-name-block"><span class="team-member-name d-block">Tatsiana Luchonak</span><span class="team-member-role">tatsianaluchonak@gmail.com</span></div></div></td><td class="member-controls"><i class="fa fa-fw fa-check text-success"></i></td><td class="member-cell">Regular</td><td class="member-cell">Administrator</td><td class="member-cell">mentor</td><td class="member-cell">2 months ago</td><td class="member-controls text-end"><div class="dropdown"><a class="btn btn-dropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-ellipsis-h"></i></a><div class="dropdown-menu dropdown-menu-end"><div class="dropdown-item"><a href="#" class="action-ownership">Grant Ownership</a></div><div class="dropdown-item"><a href="#" class="action-settings">Settings</a></div><div class="dropdown-item"><a href="#" class="action-ro">Convert to read-only user</a></div><div class="dropdown-item"><a href="#" class="action-billing">Convert to billing user</a></div><div class="dropdown-item"><a href="#" class="text-danger action-deactivate">Deactivate account</a></div></div></div></td></tr></tbody></table><div class="cVxgHv"><div class="nhsh_c"><label for="paginator-per-page-1">Rows per page:</label><div class="zjpGWN"><button class="H58xsN LzLtDS K_P4Gu MBIQEc" type="button"><div class="RZYgph">10</div><i class="pqbnZF fa fa-caret-down"></i></button><input class="G5J3oH" type="text" name="paginator-per-page-1" id="paginator-per-page-1" tabindex="-1" autocomplete="off" value="true"></div></div><nav><ul class="RnbJDC"><li><button class="bnat83 LzLtDS K_P4Gu MBIQEc" disabled="">‹</button></li><li><button class="bnat83 LzLtDS tscvgR MBIQEc">1</button></li><li><button class="bnat83 LzLtDS K_P4Gu MBIQEc" disabled="">›</button></li></ul></nav></div></div></div></div></div></div></div></div></div><div class="GBfEhU"></div><div id="pswp" class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div><div id="modals"><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div><div class="ReactModalPortal"></div></div></div></div>
+
+    <script id="__LOADABLE_REQUIRED_CHUNKS__" type="application/json">[4206,7457,7317,6244,8365,4574,288,3913,855,5639,685,4440,6669,5353,8623,8754,6988,1554,9081,4057,7435,3035,9386]</script><script id="__LOADABLE_REQUIRED_CHUNKS___ext" type="application/json">{"namedChunks":["ApplicationsContent","containers-ProjectsListContainer"]}</script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.runtime.ee22fe0b7171e6e2c1ff.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.lodash.a0932036d7422101b711.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.fortawesome.a06006628ffe43fa30d7.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.sentry.b383b2ab23159047e4fa.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.react-dom.12434a31f127d2b2af88.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.class-transformer.b8e2898fbb3f8c3b8217.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.popperjs.324b67cb6e6a7ea3938c.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.axios.defffa1176bf1e76dbbe.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.mobx-react-lite.d16496d9987e8360ec55.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.react-modal.fb60b8272d328a41abdc.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.resize-observer-polyfill.f77c004ad5b3f7aed579.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.reflect-metadata.0af7b85d3dd5ff209103.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.react-router.e270d8737e04bdc1347e.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.mobx.62b370c238ad1483d1a2.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.vendor.history.2704f6c036c4cfaa7c9e.js"></script>
+<script async="" data-chunk="main" src="/assets/main/js/entry.main.eb3ed3eebdda287d1c4a.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.react-dnd.e8c1175aea5d2e92b122.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.dnd-core.d94101a73023c8b4672b.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.react-redux.165db590ec7d5534fe4c.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.react-dnd-html5-backend.374af15a2a8bbe5ec0f8.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.use-query-params.5b3146da4839252c4079.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.serialize-query-params.58c85a153f957f62c2d3.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/vendor.redux.bc6828ffb9e7b47375dc.js"></script>
+<script async="" data-chunk="ApplicationsContent" src="/assets/main/js/ApplicationsContent.ceec97914f0c3c104bb7.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/vendor.date-fns.0e4228bcf2b4d23c81a6.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/vendor.react-datepicker.51f139ea09f457946947.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/vendor.qs.75698fe0acf2a4597826.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/vendor.react-select.8e637b325629d2ab97bf.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/vendor.emotion.8a6ece03752954d3f8be.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/6988.b48ab76ef9997f163eca.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/1554.754712f7619d41bb81e0.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/9081.ffbb54fe37e18cd8a2d5.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/4057.f3ea79c3d8e5ffb07544.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/7435.0e6a9d8a25d2a29a45fc.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/3035.fb64290d7973ad150bc0.js"></script>
+<script async="" data-chunk="containers-ProjectsListContainer" src="/assets/main/js/containers-ProjectsListContainer.f393ed6277bbf5192110.js"></script>
+
+
+
+    <script type="application/javascript" src="/js/jquery-3.1.1.min.js"></script>
+
+    <script type="application/javascript" src="/js/dropzone.js"></script>
+
+    <script type="application/javascript" src="/js/popper.min.js"></script>
+
+    <script type="application/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+
+    <script type="application/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+
+    <script type="application/javascript" src="/assets/main/js/bootstrap.js"></script>
+
+    <script type="application/javascript" src="//js.stripe.com/v3/"></script>
+
+
+
+
+<iframe name="__privateStripeMetricsController3360" frameborder="0" allowtransparency="true" scrolling="no" allow="payment *" src="https://js.stripe.com/v3/m-outer-6262077c14f753400d607dc30e70f1af.html#url=https%3A%2F%2Fapp.qase.io%2Fprojects&amp;title=Qase&amp;referrer=https%3A%2F%2Fapp.qase.io%2Flogin&amp;muid=NA&amp;sid=NA&amp;version=6&amp;preview=false" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe><script src="//cdn.headwayapp.co/widget.js" async=""></script><style id="HW_styles_cont">.HW_badge_cont {
+  visibility: hidden;
+  pointer-events: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.HW_absolute {
+  position: absolute !important;
+}
+
+.HW_badge_cont.HW_visible {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.HW_badge {
+  display: block;
+  border-radius: 20px;
+  background: #CD4B5B;
+  height: 16px;
+  width: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+  font-size: 11px;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0;
+  will-change: scale;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.HW_top {
+  top: -16px;
+}
+
+.HW_bottom {
+  bottom: -16px;
+}
+
+.HW_left {
+  left: -16px;
+}
+
+.HW_right {
+  right: -16px;
+}
+
+.HW_center, .HW_vcenter {
+  left: 50%;
+  margin-left: -16px;
+}
+
+.HW_center, .HW_hcenter {
+  top: 50%;
+  margin-top: -16px;
+}
+
+.HW_badge.HW_softHidden {
+  background: #d4d4d4;
+  opacity: 1;
+  transform: scale(0.6);
+}
+
+.HW_badge.HW_hidden {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.HW_badge.HW_visible {
+  opacity: 1;
+  transform: scale(1.0);
+}
+
+.HW_frame_cont {
+  pointer-events: none;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(99, 114, 130, 0.32), 0 8px 16px rgba(27, 39, 51, 0.08);
+  background: #fff;
+  border: none;
+  position: fixed;
+  top: -900em;
+  z-index: 2147483647;
+  width: 340px;
+  height: 0;
+  opacity: 0;
+  will-change: height, margin-top, opacity;
+  margin-top: -10px;
+  transition: margin-top 0.15s ease-out, opacity 0.1s ease-out;
+  overflow: hidden;
+}
+
+.HW_frame_cont.HW_visible {
+  opacity: 1;
+  pointer-events: auto;
+  margin-top: 0px;
+}
+
+.HW_frame_cont.HW_visible.HW_bottom {
+  transition: margin-top 0.15s ease-out, opacity 0.1s ease-out, height 0.3s ease-out;
+}
+
+.HW_frame {
+  background: #fff;
+  border: none;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  z-index: 2147483647;
+}
+
+.HW_frame_cont.HW_embed {
+  position: static;
+  margin-top: 0;
+}
+
+.HW_notransition {
+  transition: none !important;
+}</style><div id="HW_frame_cont" class="HW_frame_cont HW_bottom" data-account="7wLdPJ" style="height: 453px;"><iframe id="HW_frame" class="HW_frame" src="https://headway-widget.net/widgets/7wLdPJ" referrerpolicy="strict-origin" sandbox="allow-same-origin allow-scripts allow-top-navigation allow-popups allow-forms allow-popups-to-escape-sandbox" tabindex="-1" aria-hidden="true" style="height: 453px;"></iframe></div><iframe id="intercom-frame" style="position: absolute !important; opacity: 0 !important; width: 1px !important; height: 1px !important; top: 0 !important; left: 0 !important; border: none !important; display: block !important; z-index: -1 !important; pointer-events: none;" aria-hidden="true" tabindex="-1" title="Intercom"></iframe><div class="intercom-lightweight-app"><style id="intercom-lightweight-app-style" type="text/css">
+  @keyframes intercom-lightweight-app-launcher {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes intercom-lightweight-app-gradient {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes intercom-lightweight-app-messenger {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .intercom-lightweight-app {
+    position: fixed;
+    z-index: 2147483001;
+    width: 0;
+    height: 0;
+    font-family: intercom-font, "Helvetica Neue", "Apple Color Emoji", Helvetica, Arial, sans-serif;
+  }
+
+  .intercom-lightweight-app-gradient {
+    position: fixed;
+    z-index: 2147483002;
+    width: 500px;
+    height: 500px;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    background: radial-gradient(
+      ellipse at bottom right,
+      rgba(29, 39, 54, 0.16) 0%,
+      rgba(29, 39, 54, 0) 72%);
+    animation: intercom-lightweight-app-gradient 200ms ease-out;
+  }
+
+  .intercom-lightweight-app-launcher {
+    position: fixed;
+    z-index: 2147483003;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #3C3C8C;
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+    animation: intercom-lightweight-app-launcher 250ms ease;
+  }
+
+  .intercom-lightweight-app-launcher:focus {
+    outline: none;
+    
+  }
+
+  .intercom-lightweight-app-launcher-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    transition: transform 100ms linear, opacity 80ms linear;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg {
+    width: 28px;
+    height: 32px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-open svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve {
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg {
+    height: 56px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-self-serve svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-launcher-custom-icon-open {
+    max-height: 36px;
+    max-width: 36px;
+    
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize {
+    
+        opacity: 0;
+        transform: rotate(-60deg) scale(0);
+      
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg {
+    width: 16px;
+  }
+
+  .intercom-lightweight-app-launcher-icon-minimize svg path {
+    fill: rgb(255, 255, 255);
+  }
+
+  .intercom-lightweight-app-messenger {
+    position: fixed;
+    z-index: 2147483003;
+    overflow: hidden;
+    background-color: white;
+    animation: intercom-lightweight-app-messenger 250ms ease-out;
+    
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      
+  }
+
+  .intercom-lightweight-app-messenger-header {
+    height: 75px;
+    background: linear-gradient(
+      135deg,
+      rgb(60, 60, 140) 0%,
+      rgb(29, 29, 69) 100%
+    );
+  }
+
+  @media print {
+    .intercom-lightweight-app {
+      display: none;
+    }
+  }
+</style></div></body></html>

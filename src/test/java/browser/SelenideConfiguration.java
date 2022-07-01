@@ -25,8 +25,8 @@ public class SelenideConfiguration {
     public static void setUpBasicConfigure() {
         Configuration.baseUrl = "https://qase.io/";
         Configuration.headless = false;
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = "1000x1000";
         Configuration.timeout = 10000;
-        Configuration.screenshots = true;
+        Configuration.screenshots = false;
     }
 }

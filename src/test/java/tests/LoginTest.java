@@ -1,9 +1,7 @@
 package tests;
 import org.testng.annotations.Test;
 import static com.codeborne.selenide.Condition.*;
-
-
-public class LoginTests extends BaseTest{
+public class LoginTest extends BaseTest{
 
     String massageError = "These credentials do not match our records.";
 
