@@ -1,6 +1,4 @@
 package pages;
-
-import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -48,8 +46,18 @@ public class ProjectsPage {
         return this;
     }
     @Step
+    public ProjectsPage projectNameTwo () {
+        projectName.sendKeys("Main Project Part Two");
+        return this;
+    }
+    @Step
     public ProjectsPage projectCode () {
         projectCode.sendKeys("UVXHRW");
+        return this;
+    }
+    @Step
+    public ProjectsPage projectCodeTwo () {
+        projectCode.sendKeys("SP");
         return this;
     }
     @Step
@@ -67,23 +75,4 @@ public class ProjectsPage {
         createButtonFinish.click();
         return this;
     }
-
-    public void negativeCreateNewProject () {
-        createButtonStart.click();
-        projectName.sendKeys("Main Project 2");
-        projectCode.sendKeys("SP");
-        projectDescription.sendKeys("this is such a project blah blah blah");
-        accessType.click();
-        createButtonFinish.click();
-    }
-    public void createNewProj () {
-        createButtonStart.click();
-        projectName.sendKeys("Main Project");
-        projectCode.sendKeys("UVXHRW");
-        projectDescription.sendKeys("this is such a project blah blah blah");
-        accessType.click();
-        createButtonFinish.click();
-    }
-
-
 }

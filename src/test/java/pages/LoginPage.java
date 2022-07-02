@@ -1,12 +1,10 @@
 package pages;
-
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
-
 public class LoginPage {
+
     public SelenideElement inputEmail = $(By.id("inputEmail"));
     public SelenideElement inputPassword = $(By.id("inputPassword"));
     public SelenideElement buttonLogin = $(By.id("btnLogin"));

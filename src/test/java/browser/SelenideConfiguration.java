@@ -1,9 +1,7 @@
 package browser;
-
 import com.codeborne.selenide.Configuration;
-
+import utils.PropertyReader;
 import static com.codeborne.selenide.Browsers.*;
-
 public class SelenideConfiguration {
 
     public static void configureBrowser(String browser) {
@@ -23,10 +21,11 @@ public class SelenideConfiguration {
     }
 
     public static void setUpBasicConfigure() {
-        Configuration.baseUrl = "https://qase.io/";
-        Configuration.headless = false;
+        PropertyReader reader = new PropertyReader();
+        Configuration.baseUrl = reader.getProperty("urlQase");
+        Configuration.headless = true;
         Configuration.browserSize = "1000x1000";
-        Configuration.timeout = 10000;
-        Configuration.screenshots = false;
+        Configuration.timeout = 8000;
+        Configuration.screenshots = true;
     }
 }

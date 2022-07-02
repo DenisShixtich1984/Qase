@@ -1,10 +1,8 @@
 package tests;
-
 import org.testng.annotations.Test;
-
 import static com.codeborne.selenide.Condition.visible;
-
 public class DashboardsTest extends BaseTest {
+
     @Test
     public void DashboardNotNowTest() {
         loginPage.login();

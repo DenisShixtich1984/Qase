@@ -8,7 +8,6 @@ import pages.LoginPage;
 import pages.ProjectsPage;
 import pages.WorkspacePage;
 import steps.ProjectStep;
-
 import java.util.Optional;
 import static com.codeborne.selenide.Selenide.open;
 

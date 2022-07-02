@@ -7,9 +7,7 @@ public class ProjectTest extends BaseTest {
     public void CreateNewProject() {
         loginPage.login();
         projectsPage.titleProjectPage.shouldBe(visible);
-
         projectStep.createNewProject();
-
         projectsPage.afterCreateLocator.shouldBe(visible);
     }
 
@@ -17,7 +15,7 @@ public class ProjectTest extends BaseTest {
     public void negativeCreationAttempt() {
         loginPage.login();
         projectsPage.titleProjectPage.shouldBe(visible);
-        projectsPage.negativeCreateNewProject();
+        projectStep.negativeCreateNewProject();
         projectsPage.messageErrorCode.shouldBe(visible);
     }
 

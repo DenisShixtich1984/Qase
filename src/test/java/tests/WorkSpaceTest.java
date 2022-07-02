@@ -3,7 +3,9 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Condition.exactText;
 import static com.codeborne.selenide.Condition.visible;
 public class WorkSpaceTest extends BaseTest{
+
     String massageErrorDescriptions = "The description field is required.";
+
     @Test
     public void workSpaseTest() {
         loginPage.login();

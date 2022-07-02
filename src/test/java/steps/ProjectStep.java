@@ -1,5 +1,4 @@
 package steps;
-
 import io.qameta.allure.Step;
 import pages.ProjectsPage;
 
@@ -16,6 +15,17 @@ public class ProjectStep {
                 .createStartButton()
                 .projectName()
                 .projectCode()
+                .projectDescription()
+                .accessType()
+                .createButtonFinish();
+        return this;
+    }
+    @Step()
+    public ProjectStep negativeCreateNewProject() {
+        projectsPage
+                .createStartButton()
+                .projectNameTwo()
+                .projectCodeTwo()
                 .projectDescription()
                 .accessType()
                 .createButtonFinish();
