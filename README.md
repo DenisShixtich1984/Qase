@@ -1,3 +1,3 @@
 # Qase
 
-new cheangings
+new changings
