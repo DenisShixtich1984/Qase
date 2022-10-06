@@ -23,7 +23,7 @@ public class BaseTest {
 
         String browser = Optional.ofNullable(System.getProperty("browser")).orElse("chrome");
         SelenideConfiguration.configureBrowser(browser);
-        open("login");
+        open("Login");
 
         loginPage = new LoginPage();
         projectsPage = new ProjectsPage();

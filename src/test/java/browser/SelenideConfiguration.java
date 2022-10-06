@@ -23,9 +23,9 @@ public class SelenideConfiguration {
     public static void setUpBasicConfigure() {
         PropertyReader reader = new PropertyReader();
         Configuration.baseUrl = reader.getProperty("urlQase");
-        Configuration.headless = true;
+        Configuration.headless = false;
         Configuration.browserSize = "1000x1000";
-        Configuration.timeout = 8000;
-        Configuration.screenshots = true;
+        Configuration.timeout = 10000;
+        Configuration.screenshots = false;
     }
 }
