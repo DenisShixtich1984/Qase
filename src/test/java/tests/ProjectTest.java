@@ -26,4 +26,11 @@ public class ProjectTest extends BaseTest {
         projectsPage.buttonSelect.click();
         projectsPage.checkTitleProject.shouldBe(visible);
     }
+    @Test
+    public void newStatusTwo() {
+        loginPage.login();
+        projectsPage.goToStatus();
+        projectsPage.buttonSelect.click();
+        projectsPage.checkTitleProject.shouldBe(visible);
+    }
 }
